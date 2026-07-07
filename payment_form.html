@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_form</title>
+    <link rel="stylesheet" href="css/styleform.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <div class="section1-box">
+        <h1 class="main_heading  ">Payment Form </h1>
+        </div>
+        <hr>
+        <div class="section-box">
+        <p> Required field are followed by *</p>
+        <h2>Contact Information</h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+        <p>Name:*<input type="text" name="name" placeholder="Enter your name" required> </p>
+            </div>
+             <div class="col">
+        <p>middle Name:*<input type="text" name="middle name" placeholder="Enter your middle name"> </p>
+            </div>
+            <div class="col">
+        <p>last Name:*<input type="text" name="last name" placeholder="Enter your last name" required> </p>
+            </div>
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+            Male *<input type="radio" name="gender" id="male" required>
+            female *<input type="radio" name="gender" id="female" required>
+        </p>
+    </fieldset>
+        <div class="row">
+
+    <!-- Phone Number -->
+    <div class="col">
+        <p>
+            Country Code:
+            <select name="country_code" id="country_code" required>
+                <option value="">--Code--</option>
+                <option value="+91">+91 (India)</option>
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+            </select>
+        </p>
+        </div>
+    <div class="col">
+        <p>
+            Phone Number:
+            <input type="text" name="phone_number" id="phone_number"
+                   placeholder="Enter phone number" required>
+        </p>
+        </div>
+    <div class="col">
+        <p>
+            Alternate Phone Number:
+            <input type="text" name="alt_phone_number" id="alt_phone_number"
+                   placeholder="Enter alternate phone number">
+        </p>
+        </div>
+    </div>
+        <p>Email: <input type="email" name="email" id="email" placeholder="xyz@gmail.com"> </p>
+         </div>
+        <hr>
+
+      <div class="section-box">
+        <h2>Select Address Type</h2>
+<input type="radio" id="permanent" name="address_type" value="Permanent">
+<label for="permanent">Permanent Address</label>
+<input type="radio" id="alternate" name="address_type" value="Alternate">
+<label for="alternate">Current Address</label>
+ </div>
+        <hr>
+        <div class="section-box">
+        <h2>Permanent Address</h2>
+        <hr>
+        <div class="row" >
+            <div class="col">
+        <p>Address line 1: <textarea name="address1" id="address1" cols="100" rows="8" style="resize:none;"></textarea></p>
+            </div>
+            <div class="col">
+        <p>Address line 2: <textarea name="address2" id="address2" cols="100" rows="8" style="resize:none;"></textarea></p>
+            </div>
+        </div>
+        </div>
+        <hr>
+         <div class="section-box">
+        <h2>Current Address</h2>
+        <hr>
+        <div class="row">
+            <div class="col">
+        <p>Address line 1: <textarea name="correspondence1" id="correspondence1" cols="100" rows="8" style="resize:none;">
+        </textarea></p>
+            </div>
+            <div class="col">
+        <p>Address line 2: <textarea name="correspondence2" id="correspondence1" cols="100" rows="8" style="resize:none;">
+        </textarea></p>
+            </div>
+        </div>
+        </div>
+     <div class="section-box">
+        <div class="row">
+    <div class="col">
+        <p>
+            Country:
+            <select name="country" id="country" required>
+                <option value="">--Select Country--</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Switerland">Switzerland</option>
+                <option value="South Africa">South Africa</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Russia">Russia</option>
+                <option value="Other">Australia</option>
+            </select>
+        </p>
+        <p id="other_country_box" >
+    if other:
+    <input type="text" name="other_country_app" placeholder="Country name">
+</p>
+    </div>
+
+    <div class="col">
+        <p>
+            State:
+            <select name="state" id="state" required>
+                <option value="">--Select State--</option>
+                <option value="Delhi">Delhi (NCT)</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Goa">Goa</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+        <p id="other_state_box" >
+    if other:
+    <input type="text" name="other_state_app" placeholder="State name">
+</p>
+    </div>
+
+    <div class="col">
+        <p>
+            City / District/Region:
+            <select name="city" id="city" required>
+                <option value="">--Select District--</option>
+                <option value="Central Delhi">Central Delhi</option>
+                <option value="East Delhi">East Delhi</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="North Delhi">North Delhi</option>
+                <option value="North East Delhi">North East Delhi</option>
+                <option value="North West Delhi">North West Delhi</option>
+                <option value="Shahdara">Shahdara</option>
+                <option value="South Delhi">South Delhi</option>
+                <option value="South East Delhi">South East Delhi</option>
+                <option value="South West Delhi">South West Delhi</option>
+                <option value="West Delhi">West Delhi</option>
+            </select>
+        </p>
+        <p id="other_city_box" >
+    if other:
+    <input type="text" name="other_city_app" placeholder="City/District/Region name">
+</p>
+    </div>
+
+    <div class="col">
+        <p>
+            Pincode:
+            <input type="text" name="pincode" id="pincode" placeholder="110001" required>
+        </p>
+    </div>
+
+</div>
+ </div>
+            <hr>
+            <div class="section-box">
+              <h2>Payment Information</h2>
+<p><b>Select Payment Method:</b></p>
+            <input type="radio" id="card" name="payment" value="Card">
+                <label for="card">Card</label><br>
+            <input type="radio" id="netbanking" name="payment" value="Net Banking">
+                <label for="netbanking">Net Banking</label><br>
+            <input type="radio" id="upi" name="payment" value="UPI">
+                <label for="upi">UPI</label>
+                 </div>
+<hr>
+<div class="section-box">
+<h3>Card Payment</h3>
+<p>
+    Card Type:
+    <select name="card_type">
+        <option value="">--Select Card Type--</option>
+        <option value="visa">Visa</option>
+        <option value="rupay">RuPay</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="Other">other</option>
+    </select>
+</p>
+<p id="other_card_box" >
+    if other:
+    <input type="text" name="other_card_app" placeholder="Enter card name">
+</p>
+<p>
+    Card Number:
+    <input type="text" name="card_number">
+</p>
+<p>
+    Expiry Date:
+    <input type="date" name="exp_date">
+</p>
+<p>
+    CVV:
+    <input type="password" name="cvv">
+</p>
+</div>
+<hr>
+<div class="section-box">
+<h3>Net Banking</h3>
+<p>
+    Bank:
+    <select name="bank">
+        <option value="">--Select Bank--</option>
+        <option value="sbi">SBI</option>
+        <option value="hdfc">HDFC</option>
+        <option value="icici">ICICI</option>
+        <option value="axis">Axis Bank</option>
+        <option value="Punjab Bank">Punjab Bank</option>
+        <option value="Bank of Broda">Bank Of Baroda</option>
+        <option value="Central Bank">central Bank</option>
+        <option value="Union Bank">union Bank</option>
+        <option value="other">Other</option>
+    </select>
+</p>
+<p id="other_Bank_box" >
+    if other:
+    <input type="text" name="other_Bank_app" placeholder="Enter Bank name">
+</p>
+<p>
+    Account Number:
+    <input type="text" name="account_number">
+</p>
+<p>
+    IFSC Code:
+    <input type="text" name="ifsc">
+</p>
+</div>
+<hr>
+<div class="section-box">
+<h3>UPI Payment</h3>
+<p>
+    <label>
+    <input type="radio" name="upi_app" value="gpay">
+    <img src="projectdocs\gpay.png" width="20"> Google Pay
+</label><br>
+
+<label>
+    <input type="radio" name="upi_app" value="phonepe">
+    <img src="projectdocs\phonepe.png" width="20"> PhonePe
+</label><br>
+
+<label>
+    <input type="radio" name="upi_app" value="paytm">
+    <img src="projectdocs\paytm_logo" width="20"> Paytm
+</label><br>
+
+<label>
+    <input type="radio" name="upi_app" value="bhim">
+    <img src="projectdocs\bhim-upi-icon.webp" width="20"> BHIM
+</label>
+</p>
+<p>
+    UPI ID:
+    <input type="text" name="upi_id" placeholder="example@upi">
+</p>    
+</div>
+    <hr>
+    <div class="section-box">
+    <h2>Rules & Regulations</h2>
+    </div>
+    <hr>
+
+<div class="section-box">
+<div>
+    <p><b>Please read the following rules carefully before filling the form:</b></p>
+    <ul>
+        <li>All information must be correct and valid.</li>
+        <li>Use your legal name as per official documents.</li>
+        <li>Do not leave mandatory fields blank.</li>
+        <li>Provide a valid phone number and email ID.</li>
+        <li>Incorrect information may lead to rejection of the form.</li>
+        <li>Only one application per user is allowed.</li>
+    </ul>
+
+    <p>
+        Note: Once submitted, information cannot be edited.
+    </p>
+
+</div>
+</div>
+ <hr>
+<div class="section-box">
+    <h4>
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">
+        I hereby declare that the information furnished above is true, complete, and correct to the best of my knowledge and belief .
+    </label>
+    </h4>
+</div>
+  <hr>
+    <div class="section1-box">
+        <input type="submit" value="Pay Now">
+    </div>
+    </form>
+    </div><h1> </h1>
+</body>
+</html>
