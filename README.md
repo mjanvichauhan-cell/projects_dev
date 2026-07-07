@@ -1,6 +1,6 @@
 # Payment Form
 
-![Payment Form](payment_form.png.png)
+![Payment Form](https://github.com/mjanvichauhan-cell/projects_dev/blob/8ce738ac8558104dc71bed7c54e4b9897749240c/payment_form.png)
 
 ---
 
